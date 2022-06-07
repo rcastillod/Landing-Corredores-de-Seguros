@@ -1,41 +1,5 @@
-@font-face {
-    font-family: 'Calibri';
-    src: url('../webfonts/Calibri.woff2') format('woff2'),
-        url('../webfonts/Calibri.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Calibri';
-    src: url('../webfonts/Calibri-Bold.woff2') format('woff2'),
-        url('../webfonts/Calibri-Bold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Frutiger';
-    src: url('../webfonts/FrutigerBold.woff2') format('woff2'),
-        url('../webfonts/FrutigerBold.woff') format('woff');
-    font-weight: bold;
-    font-style: normal;
-    font-display: swap;
-}
-
-@font-face {
-    font-family: 'Frutiger';
-    src: url('../webfonts/Frutiger.woff2') format('woff2'),
-        url('../webfonts/Frutiger.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
-}
-
 body {
     color: map-get($dark-color, '900' );
     font-family: $text-ff;
-    font-size: map-get($sizes, medium );
+    font-size: var(--medium);
 }

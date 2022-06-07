@@ -6,7 +6,7 @@
 
     &__link {
         color: map-get($dark-color, '900' );
-        font-size: map-get($sizes, 'x-large' );
+        font-size: var(--x-large);
         text-decoration: none;
         transition: color .3s ease-in-out;
         &:hover,

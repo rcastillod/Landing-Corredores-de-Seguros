@@ -21,7 +21,7 @@
         h1,
         h2 {
             color: map-get($dark-color, '800' );
-            font-size: map-get($sizes, '5x-large' );
+            font-size: var(--5x-large);
             &.light {
                 color: rgba(map-get($white-color, '900' ), .8);
             }

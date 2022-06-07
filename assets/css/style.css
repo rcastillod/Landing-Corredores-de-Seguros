@@ -4,6 +4,31 @@
 /* -------------------------------------------------------------------------- */
 /* ------ Colors ------ */
 /* ------ Fonts ------ */
+:root {
+  --5x-large: 2.5rem;
+  --4x-large: 2.25rem;
+  --3x-large: 2rem;
+  --2x-large: 1.75rem;
+  --x-large: 1.375rem;
+  --large: 1.125rem;
+  --medium: 1rem;
+  --small: .875rem;
+  --x-small: .75rem;
+}
+
+@media (min-width: 992px) {
+  :root {
+    --5x-large: 3.125rem;
+    --4x-large: 2.8125rem;
+    --3x-large: 2.5rem;
+    --2x-large: 2.1875rem;
+    --x-large: 1.875rem;
+    --large: 1.25rem;
+    --medium: 1rem;
+    --small: .875rem;
+    --x-small: .75rem;
+  }
+}
 /* ------ Breakpoints ------ */
 /* ------ Border ------ */
 /* ------ Breakpoints ------ */
@@ -11759,48 +11784,6 @@ html {
   scroll-behavior: smooth;
 }
 
-/* Section */
-.section-wrapper {
-  padding-block: 3.125rem;
-}
-@media (min-width: 768px) {
-  .section-wrapper {
-    padding-block: 6.25rem;
-  }
-}
-
-.grey-bg {
-  background-color: #F0F1F1;
-}
-
-.section-title {
-  font-size: 2rem;
-}
-
-.section-text {
-  font-size: 1.375rem;
-}
-
-.section-link {
-  color: #000000;
-  font-size: 1.375rem;
-  transition: color 0.3s ease-in-out;
-}
-.section-link:hover, .section-link:focus {
-  color: #F1712F;
-}
-
-/* Cotización */
-.cotizacion {
-  padding-block-start: 0;
-  padding-block-end: 3.125rem;
-}
-@media (min-width: 768px) {
-  .cotizacion {
-    padding-block: 6.25rem;
-  }
-}
-
 @font-face {
   font-family: "Calibri";
   src: url("../webfonts/Calibri.woff2") format("woff2"), url("../webfonts/Calibri.woff") format("woff");
@@ -11829,10 +11812,52 @@ html {
   font-style: normal;
   font-display: swap;
 }
+/* Section */
+.section-wrapper {
+  padding-block: 3.125rem;
+}
+@media (min-width: 768px) {
+  .section-wrapper {
+    padding-block: 6.25rem;
+  }
+}
+
+.grey-bg {
+  background-color: #F0F1F1;
+}
+
+.section-title {
+  font-size: var(--3x-large);
+}
+
+.section-text {
+  font-size: var(--x-large);
+}
+
+.section-link {
+  color: #000000;
+  font-size: var(--x-large);
+  transition: color 0.3s ease-in-out;
+}
+.section-link:hover, .section-link:focus {
+  color: #F1712F;
+}
+
+/* Cotización */
+.cotizacion {
+  padding-block-start: 0;
+  padding-block-end: 3.125rem;
+}
+@media (min-width: 768px) {
+  .cotizacion {
+    padding-block: 6.25rem;
+  }
+}
+
 body {
   color: #000000;
   font-family: "Calibri", sans-serif;
-  font-size: 1rem;
+  font-size: var(--medium);
 }
 
 /* Box sizing rules */
@@ -11946,7 +11971,7 @@ select {
 }
 .footer__link {
   color: #000000;
-  font-size: 1.375rem;
+  font-size: var(--x-large);
   text-decoration: none;
   transition: color 0.3s ease-in-out;
 }
@@ -11982,7 +12007,7 @@ select {
 .banner .banner__title h2,
 .banner .banner__title .h2 {
   color: #5e5e5e;
-  font-size: 2.5rem;
+  font-size: var(--5x-large);
 }
 .banner .banner__title h1.light, .banner .banner__title .light.h1,
 .banner .banner__title h2.light,
@@ -12015,7 +12040,7 @@ select {
   margin-block-end: 1.875rem;
 }
 .form__title {
-  font-size: 1.75rem;
+  font-size: var(--2x-large);
 }
 .form__content {
   display: grid;
@@ -12089,7 +12114,7 @@ textarea {
   border-radius: 1.875em;
   color: #ffffff;
   display: inline-flex;
-  font-size: 2rem;
+  font-size: var(--3x-large);
   font-weight: 900;
   gap: 0.3125em;
   padding: 0.3125em 1.25em;
@@ -12103,7 +12128,7 @@ textarea {
   line-height: 0.8;
 }
 .btn-cotizar span {
-  font-size: 1.125rem;
+  font-size: var(--large);
   font-weight: 100;
 }
 .btn-cotizar:hover, .btn-cotizar:focus {
@@ -12118,7 +12143,7 @@ textarea {
   bottom: 5.625rem;
   box-shadow: 0px 14px 30px -12px rgba(94, 94, 94, 0.6);
   display: flex;
-  font-size: 1.125rem;
+  font-size: var(--large);
   gap: 0.625em;
   left: 1.875rem;
   padding: 0.625em;

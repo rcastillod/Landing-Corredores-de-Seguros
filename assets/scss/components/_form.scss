@@ -21,7 +21,7 @@
     }
 
     &__title {
-        font-size: map-get($sizes, '2x-large' );
+        font-size: var(--2x-large);
     }
 
     &__content {

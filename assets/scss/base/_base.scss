@@ -2,6 +2,42 @@ html {
     scroll-behavior: smooth;
 }
 
+@font-face {
+    font-family: 'Calibri';
+    src: url('../webfonts/Calibri.woff2') format('woff2'),
+        url('../webfonts/Calibri.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Calibri';
+    src: url('../webfonts/Calibri-Bold.woff2') format('woff2'),
+        url('../webfonts/Calibri-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Frutiger';
+    src: url('../webfonts/FrutigerBold.woff2') format('woff2'),
+        url('../webfonts/FrutigerBold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Frutiger';
+    src: url('../webfonts/Frutiger.woff2') format('woff2'),
+        url('../webfonts/Frutiger.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
 /* Section */
 .section-wrapper {
     padding-block: 3.125rem;
@@ -13,14 +49,14 @@ html {
     background-color: map-get($white-color, '800' );
 }
 .section-title {
-    font-size: map-get($sizes, '3x-large' );
+    font-size: var(--3x-large);
 }
 .section-text {
-    font-size: map-get($sizes, 'x-large' );
+    font-size: var(--x-large);
 }
 .section-link {
     color: map-get($dark-color, '900' );
-    font-size: map-get($sizes, 'x-large' );
+    font-size: var(--x-large);
     transition: color .3s ease-in-out;
     &:hover,
     &:focus {
