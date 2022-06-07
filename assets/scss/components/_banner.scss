@@ -1,0 +1,26 @@
+.banner {
+    background-position: center center;
+    background-size: cover;
+    display: flex;
+    height: 80vh;
+    
+    &-hero-01 {
+        background-image: url(../img/bg-banner-01.jpg);
+    }
+    &-hero-02 {
+        background-image: url(../img/bg-banner-02.jpg);
+    }
+    
+    .banner__title {
+        width: min(100% - 2rem, 50rem);
+        h1,
+        h2 {
+            color: map-get($black-color, '800' );
+            font-size: map-get($sizes, '5x-large' );
+            &.light {
+                color: rgba(map-get($white-color, '900' ), .5);
+            }
+        }
+    }
+
+}

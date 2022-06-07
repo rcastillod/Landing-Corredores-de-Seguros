@@ -1,0 +1,10 @@
+.header {
+    background-color: map-get($primary-color, '900' ); 
+    padding-block: .3125rem;
+
+    .logo {
+        color: map-get($white-color, '900' );
+        text-align: right;
+        text-decoration: none;
+    }
+}

@@ -1,0 +1,37 @@
+.btn {
+    background-color: map-get($black-color, '900' );
+    border: none;
+    border-radius: 0;
+    color: map-get($white-color, '900' );
+    font-size: map-get($sizes, 'large' );
+    padding-block: 1.25em;
+    transition: background .3s ease-in-out;
+    width: 100%;
+    &:hover,
+    &:focus {
+        background-color: map-get($black-color, '800' );
+    }
+}
+
+.btn-cotizar {
+    align-items: center;
+    background-color: map-get($primary-color, '800' );
+    border-radius: $br;
+    color: map-get($white-color, '900' );
+    display: inline-flex;
+    font-size: map-get($sizes, '3x-large' );
+    font-weight: 900;
+    gap: .3125em;
+    padding: .3125em 1.25em;
+    text-decoration: none;
+    text-transform: uppercase;
+    & > div {
+        display: flex;
+        flex-direction: column;
+        line-height: 0.8;
+    }
+    span {
+        font-size: map-get($sizes, 'large' );
+        font-weight: 100;
+    }
+}

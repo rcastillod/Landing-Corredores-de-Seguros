@@ -1,0 +1,5 @@
+body {
+    color: map-get($black-color, '900' );
+    font-family: $text-ff;
+    font-size: map-get($sizes, medium );
+}
