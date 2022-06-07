@@ -1,17 +1,17 @@
 .footer {
     background-color: map-get($primary-color, '900' );
-    font-family: $link-ff;
+    display: flex;
+    justify-content: center;
     padding-block: 1.875rem;
-    
-    // Wrapper
-    .footer-wrapper {  
-        align-items: center;      
-        display: flex;
-        justify-content: space-between;
-        @extend %mobile-orientation;
-        @include breakpoint-down(map-get($breakpoints, 'medium')) {
-            gap: .9375rem;
+
+    &__link {
+        color: map-get($dark-color, '900' );
+        font-size: map-get($sizes, 'x-large' );
+        text-decoration: none;
+        transition: color .3s ease-in-out;
+        &:hover,
+        &:focus {
+            color: map-get($white-color, '900' );
         }
     }
-
 }

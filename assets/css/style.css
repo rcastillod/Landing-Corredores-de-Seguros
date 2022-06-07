@@ -11761,58 +11761,77 @@ html {
 
 /* Section */
 .section-wrapper {
-  padding-block: 6.25rem;
+  padding-block: 3.125rem;
 }
-.section-wrapper.grey-bg {
+@media (min-width: 768px) {
+  .section-wrapper {
+    padding-block: 6.25rem;
+  }
+}
+
+.grey-bg {
   background-color: #F0F1F1;
 }
 
 .section-title {
-  font-size: 2.5rem;
+  font-size: 2rem;
 }
 
 .section-text {
-  font-size: 1.875rem;
+  font-size: 1.375rem;
 }
 
 .section-link {
   color: #000000;
-  font-size: 1.875rem;
+  font-size: 1.375rem;
+  transition: color 0.3s ease-in-out;
+}
+.section-link:hover, .section-link:focus {
+  color: #F1712F;
 }
 
-/* Orientation */
-.footer .footer-wrapper {
-  flex-direction: column;
+/* Cotización */
+.cotizacion {
+  padding-block-start: 0;
+  padding-block-end: 3.125rem;
 }
 @media (min-width: 768px) {
-  .footer .footer-wrapper {
-    flex-direction: row;
+  .cotizacion {
+    padding-block: 6.25rem;
   }
 }
 
-/* Keyframes */
-@keyframes horizontalMove {
-  0% {
-    -webkit-transform: translateX(150px);
-    -ms-transform: translateX(150px);
-    transform: translateX(150px);
-  }
-  100% {
-    -webkit-transform: translateX(0);
-    -ms-transform: translateX(0);
-    transform: translateX(0);
-  }
+@font-face {
+  font-family: "Calibri";
+  src: url("../webfonts/Calibri.woff2") format("woff2"), url("../webfonts/Calibri.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
-@keyframes rotation {
-  100% {
-    -webkit-transform: rotate(360deg);
-    -ms-transform: rotate(360deg);
-    transform: rotate(360deg);
-  }
+@font-face {
+  font-family: "Calibri";
+  src: url("../webfonts/Calibri-Bold.woff2") format("woff2"), url("../webfonts/Calibri-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Frutiger";
+  src: url("../webfonts/FrutigerBold.woff2") format("woff2"), url("../webfonts/FrutigerBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Frutiger";
+  src: url("../webfonts/Frutiger.woff2") format("woff2"), url("../webfonts/Frutiger.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 body {
   color: #000000;
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Calibri", sans-serif;
   font-size: 1rem;
 }
 
@@ -11839,6 +11858,18 @@ blockquote,
 dl,
 dd {
   margin: 0;
+}
+
+h1, .h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5 {
+  font-family: "Frutiger", sans-serif;
 }
 
 /* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
@@ -11909,18 +11940,18 @@ select {
 
 .footer {
   background-color: #ff9300;
-  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
   padding-block: 1.875rem;
 }
-.footer .footer-wrapper {
-  align-items: center;
-  display: flex;
-  justify-content: space-between;
+.footer__link {
+  color: #000000;
+  font-size: 1.375rem;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
 }
-@media (max-width: 768px) {
-  .footer .footer-wrapper {
-    gap: 0.9375rem;
-  }
+.footer__link:hover, .footer__link:focus {
+  color: #ffffff;
 }
 
 /* -------------------------------------------------------------------------- */
@@ -11930,7 +11961,12 @@ select {
   background-position: center center;
   background-size: cover;
   display: flex;
-  height: 80vh;
+  height: 65vh;
+}
+@media (min-width: 768px) {
+  .banner {
+    height: 80vh;
+  }
 }
 .banner-hero-01 {
   background-image: url(../img/bg-banner-01.jpg);
@@ -11939,28 +11975,38 @@ select {
   background-image: url(../img/bg-banner-02.jpg);
 }
 .banner .banner__title {
+  font-weight: 900;
   width: min(100% - 2rem, 50rem);
 }
 .banner .banner__title h1, .banner .banner__title .h1,
 .banner .banner__title h2,
 .banner .banner__title .h2 {
   color: #5e5e5e;
-  font-size: 3.125rem;
+  font-size: 2.5rem;
 }
 .banner .banner__title h1.light, .banner .banner__title .light.h1,
 .banner .banner__title h2.light,
 .banner .banner__title .light.h2 {
-  color: rgba(255, 255, 255, 0.5);
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .form {
   background-color: #ff9300;
   box-shadow: 0px 15px 50px 0px rgba(94, 94, 94, 0.4);
-  bottom: 0;
-  left: 0;
   padding: 2.5rem;
-  position: absolute;
   width: 100%;
+}
+@media (min-width: 768px) {
+  .form {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+  }
+}
+@media (max-width: 767.98px) {
+  .form {
+    margin-top: -15.625rem;
+  }
 }
 .form__header {
   align-items: center;
@@ -11969,25 +12015,30 @@ select {
   margin-block-end: 1.875rem;
 }
 .form__title {
-  font-size: 2.1875rem;
+  font-size: 1.75rem;
 }
 .form__content {
   display: grid;
   gap: 0.625rem;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr;
+}
+@media (min-width: 768px) {
+  .form__content {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 .form__item.full {
   grid-column: 1/-1;
 }
 
-.comunidad__icon {
+.icon-box {
   align-items: center;
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
 }
-.comunidad__icon p {
-  font-size: 1.25rem;
+.icon-box__title {
+  font-size: 1.5rem;
 }
 
 input,
@@ -12023,8 +12074,8 @@ textarea {
   border: none;
   border-radius: 0;
   color: #ffffff;
-  font-size: 1.25rem;
-  padding-block: 1.25em;
+  font-size: 1.5rem;
+  padding-block: 0.625em;
   transition: background 0.3s ease-in-out;
   width: 100%;
 }
@@ -12038,12 +12089,13 @@ textarea {
   border-radius: 1.875em;
   color: #ffffff;
   display: inline-flex;
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 900;
   gap: 0.3125em;
   padding: 0.3125em 1.25em;
   text-decoration: none;
   text-transform: uppercase;
+  transition: background 0.3s ease-in-out;
 }
 .btn-cotizar > div {
   display: flex;
@@ -12051,16 +12103,52 @@ textarea {
   line-height: 0.8;
 }
 .btn-cotizar span {
-  font-size: 1.25rem;
+  font-size: 1.125rem;
   font-weight: 100;
+}
+.btn-cotizar:hover, .btn-cotizar:focus {
+  background-color: #ff9300;
+  color: #ffffff;
+}
+
+.whatsapp-chat {
+  align-items: center;
+  background-color: #4D8E7E;
+  border-radius: 1.875em;
+  bottom: 1.25rem;
+  box-shadow: 0px 14px 30px -12px rgba(94, 94, 94, 0.6);
+  display: flex;
+  font-size: 1.125rem;
+  gap: 0.625em;
+  left: 1.25rem;
+  padding: 0.625em 1.25em;
+  position: fixed;
+  text-decoration: none;
+}
+@media (min-width: 768px) {
+  .whatsapp-chat {
+    bottom: 3.125rem;
+    left: 3.125rem;
+  }
+}
+.whatsapp-chat img {
+  width: 2.5rem;
+}
+.whatsapp-chat span {
+  color: #ffffff;
 }
 
 .logos-grid {
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(5, 1fr);
   gap: 20px;
   margin-inline: auto;
   width: min(100% - 2rem, 75rem);
+}
+@media (min-width: 768px) {
+  .logos-grid {
+    grid-template-columns: repeat(7, 1fr);
+  }
 }
 
 /* -------------------------------------------------------------------------- */

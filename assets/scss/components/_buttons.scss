@@ -1,15 +1,15 @@
 .btn {
-    background-color: map-get($black-color, '900' );
+    background-color: map-get($dark-color, '900' );
     border: none;
     border-radius: 0;
     color: map-get($white-color, '900' );
-    font-size: map-get($sizes, 'large' );
-    padding-block: 1.25em;
+    font-size: 1.5rem;
+    padding-block: .625em;
     transition: background .3s ease-in-out;
     width: 100%;
     &:hover,
     &:focus {
-        background-color: map-get($black-color, '800' );
+        background-color: map-get($dark-color, '800' );
     }
 }
 
@@ -25,6 +25,7 @@
     padding: .3125em 1.25em;
     text-decoration: none;
     text-transform: uppercase;
+    transition: background .3s ease-in-out;
     & > div {
         display: flex;
         flex-direction: column;
@@ -33,5 +34,10 @@
     span {
         font-size: map-get($sizes, 'large' );
         font-weight: 100;
+    }
+    &:hover,
+    &:focus {
+        background-color: map-get($primary-color, '900' );
+        color: map-get($white-color, '900' );
     }
 }
