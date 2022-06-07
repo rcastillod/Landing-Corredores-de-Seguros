@@ -4,12 +4,12 @@
     padding: 2.5rem;
     width: 100%;
     
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(lg) {
         bottom: 0;
         left: 0;
         position: absolute;
     }
-    @include media-breakpoint-down(md) {
+    @include media-breakpoint-down(lg) {
         margin-top: -15.625rem;
     }
 

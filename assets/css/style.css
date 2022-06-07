@@ -11996,14 +11996,14 @@ select {
   padding: 2.5rem;
   width: 100%;
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .form {
     bottom: 0;
     left: 0;
     position: absolute;
   }
 }
-@media (max-width: 767.98px) {
+@media (max-width: 991.98px) {
   .form {
     margin-top: -15.625rem;
   }
