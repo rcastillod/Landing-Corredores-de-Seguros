@@ -11819,6 +11819,14 @@ html {
   }
 }
 
+/* Compañias */
+.companias .swiper-slide {
+  text-align: center;
+}
+.companias .logos img {
+  display: inline-block;
+}
+
 body {
   color: #000000;
   font-family: "Calibri", sans-serif;
