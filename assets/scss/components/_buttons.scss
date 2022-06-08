@@ -15,7 +15,7 @@
 
 .btn-cotizar {
     align-items: center;
-    background-color: map-get($primary-color, '800' );
+    background-color: map-get($primary-color, '900' );
     border-radius: $br;
     color: map-get($white-color, '900' );
     display: inline-flex;
@@ -37,7 +37,7 @@
     }
     &:hover,
     &:focus {
-        background-color: map-get($primary-color, '900' );
+        background-color: map-get($primary-color, '800' );
         color: map-get($white-color, '900' );
     }
 }

@@ -11990,20 +11990,47 @@ select {
   color: #F1712F;
 }
 
-.footer {
-  background-color: #ff9300;
-  display: flex;
-  justify-content: center;
-  padding-block: 1.875rem;
-}
 .footer__link {
   color: #000000;
-  font-size: var(--fs-h4);
   text-decoration: none;
   transition: color 0.3s ease-in-out;
 }
 .footer__link:hover, .footer__link:focus {
   color: #ffffff;
+}
+.footer__top {
+  align-items: baseline;
+  background-color: #ff9300;
+  display: flex;
+  gap: 0.625rem;
+  justify-content: center;
+  padding-block: 1.875rem;
+}
+@media (max-width: 575.98px) {
+  .footer__top {
+    align-items: center;
+    flex-direction: column;
+  }
+}
+.footer__top .footer__link {
+  font-size: var(--fs-h4);
+}
+.footer__bottom {
+  background-color: #F1712F;
+  display: flex;
+  gap: 0.625rem;
+  justify-content: center;
+  padding-block: 0.625rem;
+}
+@media (max-width: 300px) {
+  .footer__bottom {
+    align-items: center;
+    flex-direction: column;
+    gap: 0.3125rem;
+  }
+  .footer__bottom span {
+    display: none;
+  }
 }
 
 /* -------------------------------------------------------------------------- */
@@ -12052,6 +12079,11 @@ select {
     line-height: 2.5rem;
   }
 }
+@media (max-width: 575.98px) {
+  .banner .banner__title img {
+    width: 2.5rem;
+  }
+}
 
 .form {
   background-color: #ff9300;
@@ -12069,6 +12101,11 @@ select {
 @media (max-width: 991.98px) {
   .form {
     margin-top: -9.375rem;
+  }
+}
+@media (max-width: 400px) {
+  .form {
+    padding: 1.7rem;
   }
 }
 .form__header {
@@ -12104,6 +12141,7 @@ select {
 }
 .icon-box__title {
   font-size: 1.5rem;
+  text-align: center;
 }
 
 input,
@@ -12150,7 +12188,7 @@ textarea {
 
 .btn-cotizar {
   align-items: center;
-  background-color: #F1712F;
+  background-color: #ff9300;
   border-radius: 1.875em;
   color: #ffffff;
   display: inline-flex;
@@ -12172,7 +12210,7 @@ textarea {
   font-weight: 100;
 }
 .btn-cotizar:hover, .btn-cotizar:focus {
-  background-color: #ff9300;
+  background-color: #F1712F;
   color: #ffffff;
 }
 
@@ -12207,19 +12245,6 @@ textarea {
 @media (max-width: 767.98px) {
   .whatsapp-chat span {
     display: none;
-  }
-}
-
-.logos-grid {
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  gap: 20px;
-  margin-inline: auto;
-  width: min(100% - 2rem, 75rem);
-}
-@media (min-width: 768px) {
-  .logos-grid {
-    grid-template-columns: repeat(7, 1fr);
   }
 }
 

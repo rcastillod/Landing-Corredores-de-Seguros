@@ -1,12 +1,7 @@
 .footer {
-    background-color: map-get($primary-color, '900' );
-    display: flex;
-    justify-content: center;
-    padding-block: 1.875rem;
 
     &__link {
         color: map-get($dark-color, '900' );
-        font-size: var(--fs-h4);
         text-decoration: none;
         transition: color .3s ease-in-out;
         &:hover,
@@ -14,4 +9,39 @@
             color: map-get($white-color, '900' );
         }
     }
+
+    &__top {
+        align-items: baseline;
+        background-color: map-get($primary-color, '900' );
+        display: flex;
+        gap: .625rem;
+        justify-content: center;
+        padding-block: 1.875rem;
+
+        @include media-breakpoint-down(sm) {
+            align-items: center;
+            flex-direction: column;
+        }
+    
+        .footer__link {
+            font-size: var(--fs-h4);
+        }
+    }
+
+    &__bottom {
+        background-color: map-get($primary-color, '800' );
+        display: flex;
+        gap: .625rem;
+        justify-content: center;
+        padding-block: .625rem;
+        @media (max-width: 300px) {
+            align-items: center;
+            flex-direction: column;
+            gap: .3125rem;
+            span {
+                display: none;
+            }
+        }
+    }
+
 }
