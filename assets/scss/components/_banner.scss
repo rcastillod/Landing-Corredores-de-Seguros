@@ -10,6 +10,9 @@
     
     &-hero-01 {
         background-image: url(../img/bg-banner-01.jpg);
+        @include media-breakpoint-down(lg) {
+            height: 25rem;
+        }
     }
     &-hero-02 {
         background-image: url(../img/bg-banner-02.jpg);
@@ -21,9 +24,11 @@
         h1,
         h2 {
             color: map-get($dark-color, '800' );
-            font-size: var(--5x-large);
             &.light {
                 color: rgba(map-get($white-color, '900' ), .8);
+            }
+            @include media-breakpoint-down(md) {
+                line-height: 2.5rem;
             }
         }
     }

@@ -1,5 +1,5 @@
 body {
     color: map-get($dark-color, '900' );
     font-family: $text-ff;
-    font-size: var(--medium);
+    font-size: var(--fs-base);
 }

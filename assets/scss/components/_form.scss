@@ -10,7 +10,7 @@
         position: absolute;
     }
     @include media-breakpoint-down(lg) {
-        margin-top: -15.625rem;
+        margin-top: -9.375rem;
     }
 
     &__header {
@@ -18,10 +18,11 @@
         display: flex;
         gap: 1.25rem;
         margin-block-end: 1.875rem;
-    }
-
-    &__title {
-        font-size: var(--2x-large);
+        @include media-breakpoint-down(sm) {
+            img {
+                width: 3.75rem;
+            }
+        }
     }
 
     &__content {

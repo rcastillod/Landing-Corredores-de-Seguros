@@ -6,5 +6,8 @@
         color: map-get($white-color, '900' );
         text-align: right;
         text-decoration: none;
+        @include media-breakpoint-down(md) {
+            max-width: 12.5rem;
+        }
     }
 }

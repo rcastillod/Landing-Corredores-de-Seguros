@@ -38,33 +38,6 @@ html {
     font-display: swap;
 }
 
-/* Section */
-.section-wrapper {
-    padding-block: 3.125rem;
-    @include media-breakpoint-up(md) {
-        padding-block: 6.25rem;
-    }
-}
-.grey-bg {
-    background-color: map-get($white-color, '800' );
-}
-.section-title {
-    font-size: var(--3x-large);
-}
-.section-text {
-    font-size: var(--x-large);
-}
-.section-link {
-    color: map-get($dark-color, '900' );
-    font-size: var(--x-large);
-    transition: color .3s ease-in-out;
-    &:hover,
-    &:focus {
-        color: map-get($primary-color, '800' );
-    }
-}
-
-
 /* Cotización */
 .cotizacion {
     padding-block-start: 0;

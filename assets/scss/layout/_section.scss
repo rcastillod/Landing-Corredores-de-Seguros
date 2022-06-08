@@ -1,0 +1,25 @@
+/* Section */
+.section-wrapper {
+    padding-block: 3.125rem;
+    @include media-breakpoint-up(md) {
+        padding-block: 6.25rem;
+    }
+}
+.grey-bg {
+    background-color: map-get($white-color, '800' );
+}
+.section-title {
+    font-size: var(--fs-h3);
+}
+.section-text {
+    font-size: var(--fs-h4);
+}
+.section-link {
+    color: map-get($dark-color, '900' );
+    font-size: var(--fs-h4);
+    transition: color .3s ease-in-out;
+    &:hover,
+    &:focus {
+        color: map-get($primary-color, '800' );
+    }
+}

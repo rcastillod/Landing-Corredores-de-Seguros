@@ -19,7 +19,7 @@
     border-radius: $br;
     color: map-get($white-color, '900' );
     display: inline-flex;
-    font-size: var(--3x-large);
+    font-size: var(--fs-h2);
     font-weight: 900;
     gap: .3125em;
     padding: .3125em 1.25em;
@@ -32,7 +32,7 @@
         line-height: 0.8;
     }
     span {
-        font-size: var(--large);
+        font-size: var(--fs-h5);
         font-weight: 100;
     }
     &:hover,
