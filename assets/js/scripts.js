@@ -1,12 +1,11 @@
 var swiper = new Swiper(".logos", {
     slidesPerView: 2,
     spaceBetween: 10,
-    autoplay: true,
-    loop: true,
-    pagination: {
-        el: ".swiper-pagination",
-        clickable: true,
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
     },
+    loop: true,
     breakpoints: {
         500: {
             slidesPerView: 3,
