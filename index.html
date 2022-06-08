@@ -7,6 +7,8 @@
     <title>Landing Corredores de Seguros</title>
     <!--  FontAwesome  -->
     <link rel="stylesheet" href="assets/css/all.min.css">
+    <!-- Swiper Style -->
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
     <!-- Main Style -->
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
@@ -153,23 +155,27 @@
     </section>
 
     <section class="section-wrapper companias">
-        <div class="logos-grid">
-            <img src="assets/img/logo-bci.png" alt="BCI">
-            <img src="assets/img/logo-liberty.png" alt="Liberty Seguros">
-            <img src="assets/img/logo-mapfre.png" alt="Mapfre">
-            <img src="assets/img/logo-renta.png" alt="Renta Nacional">
-            <img src="assets/img/logo-fid.png" alt="FID Seguros">
-            <img src="assets/img/logo-chubb.png" alt="CHUBB">
-            <img src="assets/img/logo-contempora.png" alt="Contempora Seguros Generales">
-            <img src="assets/img/logo-unnio.png" alt="Unnio Seguros">
-            <img src="assets/img/logo-sura.png" alt="Seguros Sura">
-            <img src="assets/img/logo-consolidada.png" alt="Chilena Consolidada">
-            <img src="assets/img/logo-consorcio.png" alt="Consorcio Seguros">
-            <img src="assets/img/logo-continental.png" alt="Continental Compañia de Seguros">
-            <img src="assets/img/logo-aspor.png" alt="Aspor">
-            <img src="assets/img/logo-hdi.png" alt="HDI">
-        </div>
         <div class="container">
+            <div class="row">
+                <div class="swiper logos">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="assets/img/logo-bci.png" alt="BCI"></div>
+                        <div class="swiper-slide"><img src="assets/img/logo-liberty.png" alt="Liberty Seguros"></div>
+                        <div class="swiper-slide"><img src="assets/img/logo-mapfre.png" alt="Mapfre"></div>
+                        <div class="swiper-slide"><img src="assets/img/logo-renta.png" alt="Renta Nacional"></div>
+                        <div class="swiper-slide"><img src="assets/img/logo-fid.png" alt="FID Seguros"></div>
+                        <div class="swiper-slide"><img src="assets/img/logo-chubb.png" alt="CHUBB"></div>
+                        <div class="swiper-slide"><img src="assets/img/logo-contempora.png" alt="Contempora Seguros Generales"></div>
+                        <div class="swiper-slide"><img src="assets/img/logo-unnio.png" alt="Unnio Seguros"></div>
+                        <div class="swiper-slide"><img src="assets/img/logo-sura.png" alt="Seguros Sura"></div>
+                        <div class="swiper-slide"><img src="assets/img/logo-consolidada.png" alt="Chilena Consolidada"></div>
+                        <div class="swiper-slide"><img src="assets/img/logo-consorcio.png" alt="Consorcio Seguros"></div>
+                        <div class="swiper-slide"><img src="assets/img/logo-continental.png" alt="Continental Compañia de Seguros"></div>
+                        <div class="swiper-slide"><img src="assets/img/logo-aspor.png" alt="Aspor"></div>
+                        <div class="swiper-slide"><img src="assets/img/logo-hdi.png" alt="HDI"></div>
+                    </div>
+                </div>
+            </div>
             <div class="row mt-4">
                 <div class="col-12 text-center">
                     <p class="section-text text-center">
@@ -231,5 +237,11 @@
         <span>Chatea con nosotros</span>
     </div>
     
+
+    <!-- Swiper Js -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Main Js -->
+    <script src="assets/js/scripts.js"></script>
+
 </body>
 </html>
